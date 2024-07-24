@@ -1,0 +1,217 @@
+.panel-contact,
+.panel-experience,
+.panel-facts,
+.panel-education,
+.panel-skills,
+.panel-cover,
+.panel-home{
+    position: relative;
+}
+.panel-home::before{
+    position: absolute;
+    content: '';
+    animation: HomeBefore 2s infinite;
+    background-image: url(/resources/img/zigzag.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 40px;
+    z-index: 1;
+    bottom: 0;
+    right: 4%;
+}
+@keyframes HomeBefore {
+    0%{
+        transform: translateX(-30px);
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(-30px);
+    }
+}
+.panel-portfolio::before{
+    position: absolute;
+    content: '';
+    animation: PortfolioBefore 2s infinite;
+    background-image: url(/resources/img/triangle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 110px;
+    height: 92px;
+    top: 5%;
+    left: 13%;
+    z-index: 1;
+}
+@keyframes PortfolioBefore {
+    0%{
+        transform: translateY(40px);
+    }
+    50%{
+        transform: translateX(-40px);
+    }
+    100%{
+        transform: translateY(40px);
+    }
+}
+.panel-cover::before{
+    position: absolute;
+    content: '';
+    animation: CoverBefore 2s infinite;
+    background-image: url(/resources/img/zigzag.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 100%;
+    top: 0;
+    left: 10%;
+    z-index: 1;
+}
+@keyframes CoverBefore {
+    0%{
+        transform: translateX(-50px);
+    }
+    50%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(-50px);
+    }
+}
+.panel-skills::before{
+    position: absolute;
+    content: '';
+    animation: SkillsBefore 4s linear infinite;
+    width: 130px;
+    height: 130px;
+    border: 7px solid #fff;
+    top: -10%;
+    right: 3%;
+    z-index: 1;
+    background: transparent;
+}
+@keyframes SkillsBefore {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.panel-education::before{
+    position: absolute;
+    content: '';
+    animation: EducationBefore 2s infinite;
+    background-image: url(/resources/img/circle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 115px;
+    height: 115px;
+    top: -8%;
+    left: 4%;
+    z-index: 1;
+}
+@keyframes EducationBefore {
+    0%{
+        transform: translateY(-50px);
+    }
+    50%{
+        transform: translateY(50px);
+    }
+    100%{
+        transform: translateY(-50px);
+    }
+}
+.panel-facts::before{
+    position: absolute;
+    content: '';
+    animation: FactsBefore 2s infinite;
+    background-image: url(/resources/img/triangle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100px;
+    height: 80px;
+    top : 5%;
+    left: 34%;
+    z-index: 1;
+}
+@keyframes FactsBefore {
+    0%{
+        transform: translateX(-40px);
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(-40px);
+    }
+}
+.panel-experience::before{
+    position: absolute;
+    content: '';
+    animation: ExperienceBefore 2s infinite;
+    background-image: url(/resources/img/zigzag.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 33px;
+    top: 7%;
+    right: 34%;
+    z-index: 1;
+}
+@keyframes ExperienceBefore {
+    0%{
+        transform: translateX(-40px);
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(-40px);
+    }
+}
+.panel-contact::before{
+    position: absolute;
+    content: '';
+    animation: ContactBefore 2s infinite;
+    background-image: url(/resources/img/zigzag.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 150px;
+    height: 33px;
+    top: 10%;
+    left: 10%;
+    z-index: 1;
+}
+.panel-contact::after{
+    position: absolute;
+    content: '';
+    animation: ContactAfter 4s linear infinite;
+    width: 130px;
+    height: 130px;
+    border: 7px solid #fff;
+    top: 25%;
+    right: 35%;
+    z-index: 1;
+    background: transparent;
+}
+@keyframes ContactBefore {
+    0%{
+        transform: translateX(-40px);
+    }
+    50%{
+        transform: translateX(40px);
+    }
+    100%{
+        transform: translateX(-40px);
+    }
+}
+@keyframes ContactAfter {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
